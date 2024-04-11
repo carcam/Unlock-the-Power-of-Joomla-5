@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<ruleset name="Generic Coding Standard">
+
+    <description>PHP 7+ coding standards for Hepta Technologies Generic projects.</description>
+
+    <!--
+    PHP 7.0 and higher.
+    -->
+    <config name="testVersion" value="7.0-"/>
+
+    <!--
+    Arguments: colors, show progress and show sniff name.
+    -->
+    <arg name="colors"/>
+    <arg value="sp"/>
+
+    <!--
+    PSR 2 Code style.
+    See http://www.php-fig.org/psr/psr-2/
+    -->
+    <rule ref="PSR2">
+        <exclude name="Generic.Files.LineLength.TooLong"/>
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+        <exclude name="PSR1.Files.SideEffects.FoundWithSymbols"/>
+    </rule>
+    <!--
+    Generic
+    -->
+    <rule ref="Generic.Metrics.CyclomaticComplexity">
+        <properties>
+            <property name="absoluteComplexity" value="50"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.Metrics.NestingLevel">
+        <properties>
+            <property name="nestingLevel" value="4"/>
+            <property name="absoluteNestingLevel" value="5"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.NamingConventions.ConstructorName"/> -->
+    <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag"/>
+    <rule ref="Generic.PHP.LowerCaseConstant"/>
+    <rule ref="Squiz.Classes.LowercaseClassKeywords"/>
+    <rule ref="Squiz.PHP.CommentedOutCode">
+        <properties>
+            <property name="maxPercentage" value="45"/>
+        </properties>
+    </rule>
+    <rule ref="Squiz.PHP.Eval"/>
+    <rule ref="Squiz.PHP.InnerFunctions"/>
+    <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
+    <!-- <rule ref="Squiz.PHP.NonExecutableCode"/> -->
+    <rule ref="Squiz.Scope.MemberVarScope"/>
+      <!--<rule ref="Squiz.Scope.StaticThisUsage"/>-->
+
+    <!--
+    Use own styles :)
+    -->
+
+</ruleset>

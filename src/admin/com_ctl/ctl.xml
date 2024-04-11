@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>COM_CTL</name>
+    <author><![CDATA[Carlos Cámara]]></author>
+    <authorEmail>carlos@hepta.es</authorEmail>
+    <authorUrl>https://developingextensionsforjoomla5.com</authorUrl>
+    <creationDate>2024-04-12</creationDate>
+    <copyright>(C) 2024 Awesome Company Limited.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>0.1.0</version>
+    <description><![CDATA[Simple To-Do list application for Joomla! Backend]]></description>
+    <namespace path="src">AwCo\Component\Ctl</namespace>
+    <administration>
+        <files folder="admin">
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+        </files>
+        <menu link="option=com_ctl" img="class:default">
+            <![CDATA[Clear To-Do List]]>
+        </menu>
+    </administration>
+</extension>
