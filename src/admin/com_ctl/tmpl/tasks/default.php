@@ -5,7 +5,7 @@ use Joomla\CMS\Router\Route;
 \defined('_JEXEC') or die;
 
 ?>
-<?php if ($this->items) :?>
+<?php if ($this->items):?>
 <form action="<?php echo Route::_('index.php?option=com_ctl&view=tasks'); ?>" method="post" name="adminForm" id="adminForm">
     <div class="table-responsive">
         <table class="table table-striped">
@@ -19,12 +19,14 @@ use Joomla\CMS\Router\Route;
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($this->items as $task) :?>
+                <?php foreach($this->items as $task) :?>
                 <tr>
                     <td><?php echo $task->id;?></td>
                     <td>
                         <div class="item-title">
+                            <a href="<?php echo Route::_('index.php?option=com_ctl&view=task&layout=edit&id=' . (int) $task->id); ?>">
                                 <?php echo $task->title;?>
+                            </a>
                         </div>
                         <p class="task-description"><?php echo $task->description;?></p>
                     </td>

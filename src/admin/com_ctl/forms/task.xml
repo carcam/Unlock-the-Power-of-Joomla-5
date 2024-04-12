@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <field name="id" type="hidden" />
+    <field name="title" type="text" label="Title" required="true" />
+    <field name="description" type="textarea" label="Description" required="false" />
+    <field name="deadline" type="text" label="Deadline" required="false" />
+    <field name="created_by" type="user" label="Created By" />
+</form>
