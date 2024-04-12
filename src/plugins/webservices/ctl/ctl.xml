@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="webservices" method="upgrade">
+    <name>plg_webservices_ctl</name>
+    <author><![CDATA[Carlos Cámara]]></author>
+    <authorEmail>carlos@hepta.es</authorEmail>
+    <authorUrl>https://developingextensionsforjoomla5.com</authorUrl>
+    <creationDate>2024-04-12</creationDate>
+    <copyright>(C) 2024 Awesome Company Limited.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>0.1.0</version>
+    <description><![CDATA[Simple To-Do list application for Joomla! Backend]]></description>
+    <namespace path="src">AwCo\Plugin\WebServices\Ctl</namespace>
+    <files>
+        <folder plugin="ctl">services</folder>
+        <folder>src</folder>
+    </files>
+</extension>
