@@ -8,16 +8,30 @@
     <copyright>(C) 2024 Awesome Company Limited.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <version>0.1.0</version>
-    <description><![CDATA[Simple To-Do list application for Joomla! Backend]]></description>
+    <description><![CDATA[COM_CTL_XML_DESCRIPTION]]></description>
     <namespace path="src">AwCo\Component\Ctl</namespace>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">
+                sql/install.mysql.sql
+            </file>
+        </sql>
+    </install>
+    <api>
+        <files folder="api/com_ctl">
+            <folder>src</folder>
+        </files>
+    </api>
     <administration>
-        <files folder="admin">
+        <files folder="admin/com_ctl">
+            <folder>language</folder>
             <folder>services</folder>
+            <folder>sql</folder>
             <folder>src</folder>
             <folder>tmpl</folder>
         </files>
         <menu link="option=com_ctl" img="class:default">
-            <![CDATA[Clear To-Do List]]>
+            <![CDATA[COM_CTL_MENU_ITEM]]>
         </menu>
     </administration>
 </extension>
